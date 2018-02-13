@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="spacing_tiny">8dp</dimen>
+    <dimen name="spacing_default">16dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+
+    <dimen name="font_default">18sp</dimen>
+    <dimen name="font_large">24sp</dimen>
+
+    <dimen name="listrow_image_size">75dp</dimen>
+    <dimen name="detail_image_size">350dp</dimen>
+</resources>

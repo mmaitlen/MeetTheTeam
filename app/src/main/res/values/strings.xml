@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MeetTheTeam</string>
+    <string name="parse_error_msg">Error occurred while parsing.  Unable to display data.</string>
+    <string name="content_description_image">Team member image</string>
+</resources>

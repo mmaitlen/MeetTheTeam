@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+                name="person"
+                type="com.mgm.meettheteam.model.Person" />
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:id="@+id/imgvw"
+                android:layout_width="@dimen/listrow_image_size"
+                android:layout_height="@dimen/listrow_image_size"
+                android:padding="@dimen/spacing_tiny"
+                app:imageUrl="@{person.avatar}"
+                android:contentDescription="@string/content_description_image" />
+
+        <TextView
+                android:id="@+id/name"
+                style="@style/PersonNameTextView"
+                android:text="@{person.fullName}"
+                android:layout_marginStart="@dimen/spacing_default"
+                android:layout_marginEnd="@dimen/spacing_default"
+                android:layout_toEndOf="@+id/imgvw"
+                android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</layout>
